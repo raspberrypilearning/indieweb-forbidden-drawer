@@ -1,0 +1,4 @@
+name: "Indieweb Forbidden Drawer"
+identifier: "indieweb-forbidden-drawer-complete"
+type: 'html'
+build: true

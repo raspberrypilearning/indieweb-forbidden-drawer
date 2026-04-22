@@ -1,14 +1,17 @@
-title: Project title in sentence case
 hero_image: images/banner.png
-description: A short description of the project
+description: Make one forbidden drawer that opens with HTML and reveals a mildly gross surprise
 listed: false
 pdf: false
+title: 'Indieweb Forbidden Drawer'
+landing: true
 steps:
-  - title: What you will make
-  - title: Step title
+  - title: 'Label the forbidden drawer'
+  - title: 'Hide something suspicious inside'
     completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
+      - 'engaged'
+  - title: 'Change the page colours'
     completion:
-      - external
+      - 'internal'
+  - title: 'Make the drawer look wrong'
+    completion:
+      - 'external'
