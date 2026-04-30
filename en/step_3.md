@@ -1,16 +1,18 @@
-<h2 class="c-project-heading--task">Change the page colours</h2>
+<h2 class="c-project-heading--task">Give it terminally bad taste</h2>
 
-You will change a few CSS values so the drawer gets its own rotten mood.
+Change the custom properties at the top of `style.css` so the page gets darker, louder, and more glittery in the worst possible way.
 
-Open `style.css` and edit the custom properties at the top. These small values control the page background, the drawer colours, the border size, and the font.
+Open `style.css` and edit the values inside `:root`. These custom properties control the background colours, the bright panel colours, the border size, the font, and the width of the widget.
 
 <div class="c-project-tip">
 
 <h3>Tip</h3>
 
-<p>Try colours that feel sticky, mouldy, suspicious, or just plain wrong.</p>
+<p>Pick colours that feel like a dodgy profile theme, a fake warning sticker, or a file that should never have been uploaded.</p>
 
-<p>Swap the font if you want the page to feel cleaner, louder, or more handwritten.</p>
+<p>Small value changes can make the whole page feel more sugary, more dramatic, or more suspicious.</p>
+
+<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
 
 </div>
 
@@ -22,20 +24,22 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 1
-line_highlights: 2-12
+line_highlights: 2-14
 ---
-/* Change these values to make the drawer feel more cursed. */
+/* Change these values to give the page terminally bad taste. */
 :root {
-  --page-bg: #efe3c2;
-  --ink: #23101b;
-  --panel-bg: #fff7ec;
-  --drawer-bg: #c8f06b;
-  --drawer-open-bg: #ffd976;
-  --inside-bg: #fff9ef;
-  --border-size: 4px;
-  --corner-size: 22px;
-  --body-font: "Trebuchet MS", Verdana, sans-serif;
-  --drawer-width: 32rem;
+  --page-bg: #140016;
+  --ink: #29001d;
+  --panel-bg: #ffd5ef;
+  --drawer-bg: #9dff65;
+  --drawer-open-bg: #ffe45e;
+  --inside-bg: #fff7fe;
+  --accent: #7cecff;
+  --shadow-color: #170011;
+  --border-size: 5px;
+  --corner-size: 14px;
+  --body-font: Verdana, Geneva, sans-serif;
+  --drawer-width: 34rem;
 }
 --- /code ---
 
@@ -43,8 +47,8 @@ line_highlights: 2-12
 
 <h2 class="c-project-heading--task">Test</h2>
 
-The page should still work, but the colours and font should now feel more suspicious.
+The page should still open and close the same way, but now it should look more like a cursed profile skin.
 
 <div class="c-project-output">
-  <img src="images/step_3_output.png" alt="Observed project output after this step.">
+  <img src="images/step_3_output.png" alt="Expected project output after step 3 showing darker colours and louder cursed-profile styling.">
 </div>

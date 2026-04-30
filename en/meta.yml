@@ -1,17 +1,17 @@
 hero_image: images/banner.png
-description: Make one forbidden drawer that opens with HTML and reveals a mildly gross surprise
+description: Make a cursed profile artefact that opens with HTML and reveals a weird hidden message
 listed: false
 pdf: false
-title: 'Indieweb Forbidden Drawer'
+title: 'Indieweb Cursed Profile Artefact'
 landing: true
 steps:
-  - title: 'Label the forbidden drawer'
-  - title: 'Hide something suspicious inside'
+  - title: 'Add the cursed file header'
+  - title: 'Add the drawer HTML'
     completion:
       - 'engaged'
-  - title: 'Change the page colours'
+  - title: 'Give it terminally bad taste'
     completion:
       - 'internal'
-  - title: 'Make the drawer look wrong'
+  - title: 'Make it look badly famous'
     completion:
       - 'external'

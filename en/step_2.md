@@ -1,8 +1,8 @@
-<h2 class="c-project-heading--task">Hide something suspicious inside</h2>
+<h2 class="c-project-heading--task">Add the drawer HTML</h2>
 
-You will swap the placeholder reveal for your own mildly gross secret.
+Add the drawer underneath the header so the page has something dramatic to open.
 
-Stay in `index.html`. The content after `<summary>` sits inside `<details>`, so it appears when the drawer opens. Replace the paragraph with one funny, weird, or suspicious reveal of your own.
+Stay in `index.html`. Add a `<details class="drawer">` element with a clickable `<summary>` and a hidden `<section class="inside">`.
 
 <div class="c-project-code">
 
@@ -12,16 +12,17 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 11
-line_highlights: 18
+line_highlights: 16-21
 ---
     <main class="page">
-      <p class="eyebrow">Homemade Web Toy</p>
-      <h1>Do Not Open This Drawer</h1>
+      <p class="eyebrow">Recovered profile artefact // last updated 2:13am</p>
+      <h1>DO NOT OPEN_final_FINAL2.html</h1>
+      <p class="status">mood: banned from the computer room</p>
 
       <details class="drawer">
-        <summary>Click here if you enjoy bad decisions</summary>
+        <summary>open this if you want to get cooked</summary>
         <section class="inside">
-          <p>Inside is one suspicious banana, two wet biscuits, and a note that says "it hatched".</p>
+          <p>6-7</p>
         </section>
       </details>
     </main>
@@ -31,8 +32,8 @@ line_highlights: 18
 
 <h2 class="c-project-heading--task">Test</h2>
 
-Open the drawer and you should see your new hidden message inside.
+Open the drawer and you should see the new warning on the tab and `6-7` inside.
 
 <div class="c-project-output">
-  <img src="images/step_2_output.png" alt="Observed project output after this step.">
+  <img src="images/step_2_output.png" alt="Expected project output after step 2 showing the new drawer warning and hidden message.">
 </div>

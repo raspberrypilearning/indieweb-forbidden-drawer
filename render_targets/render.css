@@ -1,17 +1,17 @@
-/* Change these values to give the page terminally bad taste. */
+/* Render-only stylesheet for tutorial step screenshots. */
 :root {
-  --page-bg: #140016;
-  --ink: #29001d;
-  --panel-bg: #ffd5ef;
-  --drawer-bg: #9dff65;
-  --drawer-open-bg: #ffe45e;
-  --inside-bg: #fff7fe;
-  --accent: #7cecff;
-  --shadow-color: #170011;
-  --border-size: 5px;
-  --corner-size: 14px;
-  --body-font: Verdana, Geneva, sans-serif;
-  --drawer-width: 34rem;
+  --page-bg: #26132c;
+  --ink: #2a041e;
+  --panel-bg: #fff2fb;
+  --drawer-bg: #c9ff8b;
+  --drawer-open-bg: #ffe29a;
+  --inside-bg: #fffdfd;
+  --accent: #8ce8ff;
+  --shadow-color: #22001a;
+  --border-size: 4px;
+  --corner-size: 18px;
+  --body-font: Arial, sans-serif;
+  --drawer-width: 31rem;
 }
 
 * {
@@ -26,7 +26,7 @@ body {
   padding: 24px;
   background:
     radial-gradient(circle at top, rgba(255, 106, 199, 0.22), transparent 26%),
-    radial-gradient(circle at 85% 18%, rgba(124, 236, 255, 0.16), transparent 18%),
+    radial-gradient(circle at 85% 18%, rgba(140, 232, 255, 0.16), transparent 18%),
     linear-gradient(180deg, #09000d, var(--page-bg));
   color: var(--ink);
   font-family: var(--body-font);
@@ -81,10 +81,56 @@ h1 {
 }
 
 .drawer {
-  margin-top: 24px;
-  padding: 18px 18px 16px;
+  margin-top: 22px;
+  padding: 16px;
   border: var(--border-size) solid var(--ink);
   border-radius: var(--corner-size);
+  background: var(--drawer-bg);
+  box-shadow: 0 8px 0 var(--shadow-color);
+}
+
+.drawer[open] {
+  background: var(--drawer-open-bg);
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.inside {
+  margin-top: 14px;
+  padding: 14px;
+  border: 2px dashed var(--ink);
+  border-radius: calc(var(--corner-size) - 4px);
+  background: var(--inside-bg);
+  line-height: 1.6;
+}
+
+.inside p {
+  margin: 0;
+}
+
+body.step-3,
+body.step-4 {
+  --page-bg: #140016;
+  --ink: #29001d;
+  --panel-bg: #ffd5ef;
+  --drawer-bg: #9dff65;
+  --drawer-open-bg: #ffe45e;
+  --inside-bg: #fff7fe;
+  --accent: #7cecff;
+  --shadow-color: #170011;
+  --border-size: 5px;
+  --corner-size: 14px;
+  --body-font: Verdana, Geneva, sans-serif;
+  --drawer-width: 34rem;
+}
+
+body.step-4 .drawer {
+  margin-top: 24px;
+  padding: 18px 18px 16px;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.28), transparent 45%),
     var(--drawer-bg);
@@ -94,21 +140,20 @@ h1 {
   transition: transform 180ms ease, background-color 180ms ease;
 }
 
-.drawer[open] {
+body.step-4 .drawer[open] {
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 45%),
     var(--drawer-open-bg);
   transform: rotate(-0.7deg) translateY(3px);
 }
 
-summary {
-  cursor: pointer;
+body.step-4 summary {
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: 0.02em;
 }
 
-.inside {
+body.step-4 .inside {
   margin-top: 16px;
   padding: 14px 16px;
   border: 4px dashed var(--ink);
@@ -126,7 +171,7 @@ summary {
   line-height: 1.7;
 }
 
-.inside p {
+body.step-4 .inside p {
   margin: 0;
   font-family: "Comic Sans MS", Impact, fantasy;
   font-size: clamp(4rem, 18vw, 7rem);

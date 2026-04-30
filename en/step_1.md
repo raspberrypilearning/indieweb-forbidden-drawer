@@ -1,8 +1,8 @@
-<h2 class="c-project-heading--task">Label the forbidden drawer</h2>
+<h2 class="c-project-heading--task">Add the cursed file header</h2>
 
-You will change the page title, the main heading, and the clickable warning on the drawer.
+Add the visible header inside `<main class="page">` so the page stops looking empty.
 
-Open `index.html` and look inside the `<details>` element. The `<summary>` line is the part people click, and everything after it stays hidden until the drawer opens. Change the text so the page already feels like your own bad idea.
+Open `index.html`. The starter file has an empty `<main>` element, so add the eyebrow, the filename heading, and the mood line inside it.
 
 <div class="c-project-code">
 
@@ -12,29 +12,21 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 1
-line_highlights: 6,13,16
+line_highlights: 10-14
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forbidden Drawer</title>
+    <title>DO NOT OPEN_final_FINAL2.html</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- This one drawer opens and closes using only HTML. -->
     <main class="page">
-      <p class="eyebrow">Homemade Web Toy</p>
-      <h1>Do Not Open This Drawer</h1>
-
-      <details class="drawer">
-        <!-- <summary> is the clickable warning on the drawer. -->
-        <summary>Click here if you enjoy bad decisions</summary>
-        <section class="inside">
-          <p>Inside is one object you should definitely replace with your own weird idea.</p>
-        </section>
-      </details>
+      <p class="eyebrow">Recovered profile artefact // last updated 2:13am</p>
+      <h1>DO NOT OPEN_final_FINAL2.html</h1>
+      <p class="status">mood: banned from the computer room</p>
     </main>
   </body>
 </html>
@@ -44,8 +36,8 @@ line_highlights: 6,13,16
 
 <h2 class="c-project-heading--task">Test</h2>
 
-You should see your new heading on the page, and the warning text should appear on the drawer tab.
+You should see the recovered profile text at the top of the page instead of an empty panel.
 
 <div class="c-project-output">
-  <img src="images/step_1_output.png" alt="Observed project output after this step.">
+  <img src="images/step_1_output.png" alt="Expected project output after step 1 showing the new profile header above an otherwise empty panel.">
 </div>

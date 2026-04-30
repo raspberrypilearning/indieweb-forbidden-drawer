@@ -1,15 +1,17 @@
-/* Change a few colours and sizes to make the drawer feel wrong. */
+/* Change a few values to give the page a louder personality. */
 :root {
-  --page-bg: #f5e9d4;
-  --ink: #1b1424;
-  --panel-bg: #fffdf7;
-  --drawer-bg: #d2ff72;
-  --drawer-open-bg: #fff1b8;
-  --inside-bg: #fffdf7;
-  --border-size: 3px;
+  --page-bg: #26132c;
+  --ink: #2a041e;
+  --panel-bg: #fff2fb;
+  --drawer-bg: #c9ff8b;
+  --drawer-open-bg: #ffe29a;
+  --inside-bg: #fffdfd;
+  --accent: #8ce8ff;
+  --shadow-color: #22001a;
+  --border-size: 4px;
   --corner-size: 18px;
   --body-font: Arial, sans-serif;
-  --drawer-width: 30rem;
+  --drawer-width: 31rem;
 }
 
 * {
@@ -22,39 +24,69 @@ body {
   display: grid;
   place-items: center;
   padding: 24px;
-  background: var(--page-bg);
+  background:
+    radial-gradient(circle at top, rgba(255, 106, 199, 0.22), transparent 26%),
+    radial-gradient(circle at 85% 18%, rgba(140, 232, 255, 0.16), transparent 18%),
+    linear-gradient(180deg, #09000d, var(--page-bg));
   color: var(--ink);
   font-family: var(--body-font);
 }
 
 .page {
-  width: min(var(--drawer-width), 100%);
-  padding: 22px;
+  width: min(var(--drawer-width), calc(100vw - 48px));
+  padding: 24px;
   border: var(--border-size) solid var(--ink);
-  border-radius: calc(var(--corner-size) + 4px);
-  background: var(--panel-bg);
+  border-radius: calc(var(--corner-size) + 6px);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0)),
+    var(--panel-bg);
+  box-shadow:
+    0 14px 0 var(--shadow-color),
+    0 26px 30px rgba(0, 0, 0, 0.4);
 }
 
 .eyebrow {
   margin: 0;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 2px solid var(--ink);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 0 var(--shadow-color);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
 }
 
 h1 {
   margin: 12px 0 0;
-  font-size: clamp(2rem, 6vw, 2.8rem);
-  line-height: 1.05;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.4rem, 9vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+  text-shadow: 3px 3px 0 #fff17a;
+}
+
+.status {
+  display: inline-block;
+  margin: 12px 0 0;
+  padding: 4px 10px;
+  border: 2px dashed var(--ink);
+  border-radius: 999px;
+  background: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  transform: rotate(1deg);
 }
 
 .drawer {
-  margin-top: 20px;
-  padding: 14px;
+  margin-top: 22px;
+  padding: 16px;
   border: var(--border-size) solid var(--ink);
   border-radius: var(--corner-size);
   background: var(--drawer-bg);
+  box-shadow: 0 8px 0 var(--shadow-color);
 }
 
 .drawer[open] {
@@ -64,18 +96,18 @@ h1 {
 summary {
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .inside {
-  margin-top: 12px;
-  padding: 12px;
+  margin-top: 14px;
+  padding: 14px;
   border: 2px dashed var(--ink);
   border-radius: calc(var(--corner-size) - 4px);
   background: var(--inside-bg);
+  line-height: 1.6;
 }
 
 .inside p {
   margin: 0;
-  line-height: 1.5;
 }
