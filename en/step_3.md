@@ -2,6 +2,8 @@
 
 Change the custom properties at the top of `style.css` so the page gets darker, louder, and more glittery in the worst possible way.
 
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
 Open `style.css` and edit the values inside `:root`. These custom properties control the background colours, the bright panel colours, the border size, the font, and the width of the widget.
 
 <div class="c-project-tip">
@@ -12,7 +14,7 @@ Open `style.css` and edit the values inside `:root`. These custom properties con
 
 <p>Small value changes can make the whole page feel more sugary, more dramatic, or more suspicious.</p>
 
-<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
+<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker</a> if you want help choosing colours!</p>
 
 </div>
 
@@ -45,7 +47,7 @@ line_highlights: 2-14
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
 The page should still open and close the same way, but now it should look more like a cursed profile skin.
 

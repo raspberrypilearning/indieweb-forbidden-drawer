@@ -2,6 +2,8 @@
 
 Add the visible header inside `<main class="page">` so the page stops looking empty.
 
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
 Open `index.html`. The starter file has an empty `<main>` element, so add the eyebrow, the filename heading, and the mood line inside it.
 
 <div class="c-project-code">
@@ -34,7 +36,7 @@ line_highlights: 10-14
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
 You should see the recovered profile text at the top of the page instead of an empty panel.
 

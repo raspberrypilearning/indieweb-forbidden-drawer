@@ -2,6 +2,8 @@
 
 Add the drawer underneath the header so the page has something dramatic to open.
 
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
 Stay in `index.html`. Add a `<details class="drawer">` element with a clickable `<summary>` and a hidden `<section class="inside">`.
 
 <div class="c-project-code">
@@ -30,7 +32,7 @@ line_highlights: 16-21
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
 Open the drawer and you should see the new warning on the tab and `6-7` inside.
 

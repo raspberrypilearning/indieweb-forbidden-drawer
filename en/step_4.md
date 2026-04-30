@@ -2,6 +2,8 @@
 
 Make the clickable artefact chunkier and more dramatic so opening it feels a bit chaotic.
 
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
 Stay in `style.css` and update the drawer rules. Padding, borders, shadows, and text styling can make the closed widget feel heavy and the revealed message feel like a very bad internet discovery.
 
 <div class="c-project-tip">
@@ -87,7 +89,7 @@ summary {
 
 </div>
 
-<h2 class="c-project-heading--task">Test</h2>
+## Now run your code
 
 The widget should now feel chunkier, louder, and more chaotic when you open it, and the hidden message should look huge and ugly.
 
