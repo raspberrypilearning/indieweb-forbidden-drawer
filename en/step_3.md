@@ -4,7 +4,7 @@ Change the custom properties at the top of `style.css` so the page gets darker, 
 
 <h2 class="c-project-heading--explainer">Make this change</h2>
 
-Open `style.css` and edit the values inside `:root`. These custom properties control the background colours, the bright panel colours, the border size, the font, and the width of the widget.
+Stay in `style.css` and edit the values inside `:root`. These custom properties control the background colours, the bright panel colours, the border size, the font, and the width of the widget.
 
 <div class="c-project-tip">
 

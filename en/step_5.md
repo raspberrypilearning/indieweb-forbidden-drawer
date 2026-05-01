@@ -1,67 +1,52 @@
-<h2 class="c-project-heading--task">Make the inside look cursed</h2>
+<h2 class="c-project-heading--task">Add the cursed message</h2>
 
-Turn the inside panel and the hidden message into the ugliest part of the artefact.
+Put the final `6-7` message inside the panel, then make it look huge and embarrassing.
 
-<h2 class="c-project-heading--explainer">Make this change</h2>
+<h2 class="c-project-heading--explainer">Make these changes</h2>
 
-Stay in `style.css` and add louder inside rules underneath the simple starter ones. This is where the opened panel stops looking tidy and starts looking like a truly bad internet discovery.
+Go back to `index.html` and add the hidden message inside the panel.
 
-<div class="c-project-tip">
-
-<h3>Tip</h3>
-
-<p>`border-radius` can make the inside box feel more sticker-like or more sharp-edged.</p>
-
-<p>`text-shadow`, `font-size`, and `transform` can make the hidden message feel more ridiculous without changing the words.</p>
-
-<p>`--inside-bg` can be pale peach, dirty white, washed-out cyan, or any other suspicious colour you chose in step 3.</p>
-
-</div>
-
-These new rules go underneath the simple starter versions in `style.css`. Because they come later in the file, they take over and give the inside panel its final cursed look.
-
-### Step 1
-
-Underneath the starter rules, add a new `.inside` rule like this.
-
-This rule styles the inside panel that appears after opening. It adds the striped background, thicker border, and more space around the hidden message.
+This paragraph is the actual secret text inside the artefact. It stays hidden until the drawer opens.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: css
-filename: style.css
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 119
-line_highlights: 119-135
+line_number_start: 9
+line_highlights: 17-17
 ---
-.inside {
-  margin-top: 16px;
-  padding: 14px 16px;
-  border: 4px dashed var(--ink);
-  border-radius: calc(var(--corner-size) - 4px);
-  background:
-    repeating-linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4) 8px,
-      transparent 8px,
-      transparent 16px
-    ),
-    var(--inside-bg);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55);
-  line-height: 1.7;
-}
+    <main class="page">
+      <p class="eyebrow">Recovered profile artefact // last updated 2:13am</p>
+      <h1>DO NOT OPEN_final_FINAL2.html</h1>
+      <p class="status">mood: banned from the computer room</p>
+
+      <details class="drawer">
+        <summary>open this if you want to get cooked</summary>
+        <section class="inside">
+          <p>6-7</p>
+        </section>
+      </details>
+    </main>
 --- /code ---
 
 </div>
 
-Run your code and observe that the inside area now feels more like a messy warning panel than a plain box.
+Go back to `style.css` and add a new `.inside p` rule underneath your new `.inside` rule.
 
-### Step 2
+Because this rule comes later in the file, it takes over from the tiny starter version and gives the message its final ugly look.
 
-Underneath your new `.inside` rule, add a new `.inside p` rule like this.
+<div class="c-project-tip">
+
+<h3>Tip</h3>
+
+<p>`text-shadow`, `font-size`, and `transform` can make the hidden message feel more ridiculous without changing the words.</p>
+
+<p>Try a different bright shadow colour if you want the text to clash even more with the inside panel.</p>
+
+</div>
 
 This rule only styles the hidden paragraph itself. It turns `6-7` into huge ugly text that is impossible to miss.
 
@@ -72,8 +57,8 @@ This rule only styles the hidden paragraph itself. It turns `6-7` into huge ugly
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 137
-line_highlights: 137-147
+line_number_start: 146
+line_highlights: 146-156
 ---
 .inside p {
   margin: 0;

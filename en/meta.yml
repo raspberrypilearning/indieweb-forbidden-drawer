@@ -6,13 +6,13 @@ title: 'Indieweb Cursed Profile Artefact'
 landing: true
 steps:
   - title: 'Add the cursed file header'
-  - title: 'Add the drawer HTML'
+  - title: 'Build the warning tab'
     completion:
       - 'engaged'
   - title: 'Give it terminally bad taste'
     completion:
       - 'internal'
-  - title: 'Make it look badly famous'
-  - title: 'Make the inside look cursed'
+  - title: 'Add the hidden panel'
+  - title: 'Add the cursed message'
     completion:
       - 'external'
