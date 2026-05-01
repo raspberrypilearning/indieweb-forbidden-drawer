@@ -4,7 +4,7 @@ Add the drawer underneath the header so the page has something dramatic to open.
 
 <h2 class="c-project-heading--explainer">Make this change</h2>
 
-Stay in `index.html`. Add a `<details class="drawer">` element with a clickable `<summary>` and a hidden `<section class="inside">`.
+Add a `<details class="drawer">` element with a clickable `<summary>` and a hidden `<section class="inside">`.
 
 <div class="c-project-code">
 
