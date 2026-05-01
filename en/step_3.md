@@ -1,9 +1,5 @@
 <h2 class="c-project-heading--task">Give it terminally bad taste</h2>
 
-Change the custom properties at the top of `style.css` so the page gets darker, louder, and more glittery in the worst possible way.
-
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
 Stay in `style.css` and edit the values inside `:root`. These custom properties control the background colours, the bright panel colours, the border size, the font, and the width of the widget.
 
 <div class="c-project-tip">
@@ -24,7 +20,7 @@ Stay in `style.css` and edit the values inside `:root`. These custom properties 
 
 </div>
 
-These custom properties store the main colours, sizes, and font choices for the whole page. Changing them here updates lots of the design without rewriting every rule below.
+These custom properties store the main colours, sizes, and font choices for the whole page. Changing them here updates lots of the design without rewriting every rule below:
 
 <div class="c-project-code">
 

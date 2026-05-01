@@ -2,7 +2,7 @@
 
 Add the inside box that appears when the artefact opens, then make it look messy and suspicious.
 
-<h2 class="c-project-heading--explainer">Make these changes</h2>
+### Step 1
 
 Go back to `index.html` and add the hidden `<section>` inside the drawer.
 
@@ -33,9 +33,13 @@ line_highlights: 16-17
 
 </div>
 
+Run your code and observe that the drawer now opens and closes with an empty inside box.
+
+### Step 2
+
 Go back to `style.css` and add a new `.inside` rule underneath the comment at the bottom of the file.
 
-This new rule comes later in the file, so it takes over and gives the inside panel its louder final styling.
+This rule styles the inside panel that appears after opening. It adds the striped background, thicker border, and more space inside the hidden area. This new rule comes later in the file (so it takes over from any rules before it) and gives the inside panel its louder final styling.
 
 <div class="c-project-tip">
 
@@ -47,7 +51,7 @@ This new rule comes later in the file, so it takes over and gives the inside pan
 
 </div>
 
-This rule styles the inside panel that appears after opening. It adds the striped background, thicker border, and more space inside the hidden area.
+
 
 <div class="c-project-code">
 
@@ -80,7 +84,7 @@ line_highlights: 128-144
 
 </div>
 
-Run your code and observe that opening the drawer now shows a bigger striped panel, even though it still has no text inside it yet.
+Run your code and observe that the inside area now feels more like a messy warning panel than a plain box.
 
 ## Now run your code
 

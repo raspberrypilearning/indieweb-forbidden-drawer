@@ -1,12 +1,10 @@
 <h2 class="c-project-heading--task">Add the cursed message</h2>
 
-Put the final `6-7` message inside the panel, then make it look huge and embarrassing.
+Put the final `6-7` message inside the panel, then make it look huge and embarrassing. This paragraph is the actual secret text inside the artefact. It stays hidden until the drawer opens.
 
-<h2 class="c-project-heading--explainer">Make these changes</h2>
+### Step 1
 
 Go back to `index.html` and add the hidden message inside the panel.
-
-This paragraph is the actual secret text inside the artefact. It stays hidden until the drawer opens.
 
 <div class="c-project-code">
 
@@ -34,9 +32,13 @@ line_highlights: 17-17
 
 </div>
 
+Run your code and observe that the opened panel now contains `6-7` in plain text.
+
+### Step 2
+
 Go back to `style.css` and add a new `.inside p` rule underneath your new `.inside` rule.
 
-Because this rule comes later in the file, it takes over from the tiny starter version and gives the message its final ugly look.
+This rule only styles the hidden paragraph itself. It turns `6-7` into huge ugly text that is impossible to miss. Because this rule comes later in the file, it takes over from the tiny starter version and gives the message its final ugly look.
 
 <div class="c-project-tip">
 
@@ -48,7 +50,7 @@ Because this rule comes later in the file, it takes over from the tiny starter v
 
 </div>
 
-This rule only styles the hidden paragraph itself. It turns `6-7` into huge ugly text that is impossible to miss.
+
 
 <div class="c-project-code">
 
@@ -74,8 +76,6 @@ line_highlights: 146-156
 --- /code ---
 
 </div>
-
-Run your code and observe that the hidden message now looks huge, warped, and deeply embarrassing.
 
 ## Now run your code
 

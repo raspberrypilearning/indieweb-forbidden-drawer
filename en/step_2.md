@@ -1,10 +1,8 @@
 <h2 class="c-project-heading--task">Build the warning tab</h2>
 
+### Step 1
+
 Add the clickable shell for the artefact, then make the outside of it feel much louder.
-
-<h2 class="c-project-heading--explainer">Make these changes</h2>
-
-Add the `<details>` and `<summary>` lines underneath the header in `index.html`.
 
 `<details>` makes a built-in open-and-close widget with no JavaScript. `<summary>` is the part people click on the front.
 
@@ -31,15 +29,14 @@ line_highlights: 14-16
 
 </div>
 
+### Step 2
+
 Go to `style.css` and replace the simple outside drawer rules with these ones.
 
-These rules restyle the closed widget, the open state, and the clickable label so the warning tab feels chunky and suspicious instead of plain.
+This rule styles the **closed** widget. It controls the spacing, the bright surface colour, and the heavy shadow before the collapse is opened.
 
-### Step 1
+Replace the simple `.drawer` rule with this crazier version, or choose your own options.
 
-Replace the simple `.drawer` rule with this chunkier version.
-
-This rule styles the closed widget itself. It controls the spacing, the bright surface colour, and the heavy shadow before the drawer is opened.
 
 <div class="c-project-code">
 
@@ -70,7 +67,7 @@ line_highlights: 83-95
 
 Run your code and observe how the closed drawer looks chunkier, brighter, and heavier even before you open it.
 
-### Step 2
+### Step 3
 
 Replace the short `.drawer[open]` rule with this version.
 
@@ -96,9 +93,7 @@ line_highlights: 97-102
 
 </div>
 
-Run your code and observe that opening the drawer now changes its colour and gives it a small wonky shift.
-
-### Step 3
+### Step 4
 
 Replace the `summary` rule with this one.
 
@@ -124,7 +119,6 @@ summary {
 
 </div>
 
-Run your code and observe that the summary text on the closed drawer looks louder and more important.
 
 ## Now run your code
 

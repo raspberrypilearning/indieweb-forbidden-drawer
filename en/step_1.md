@@ -1,10 +1,6 @@
 <h2 class="c-project-heading--task">Add the cursed file header</h2>
 
-Add the visible header inside `<main class="page">` so the page stops looking empty.
-
-<h2 class="c-project-heading--explainer">Make this change</h2>
-
-The starter file has an empty `<main>` element, so add the eyebrow, the filename heading, and the mood line inside it.
+Add the eyebrow, the page's main heading, and the status line inside your page's empty `<main>` element. These can say anything you like!
 
 These tags build the visible header for the fake file. The class names give `style.css` separate hooks for the eyebrow line and the mood label later.
 
