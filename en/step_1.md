@@ -6,6 +6,8 @@ Add the visible header inside `<main class="page">` so the page stops looking em
 
 The starter file has an empty `<main>` element, so add the eyebrow, the filename heading, and the mood line inside it.
 
+These tags build the visible header for the fake file. The class names give `style.css` separate hooks for the eyebrow line and the mood label later.
+
 <div class="c-project-code">
 
 --- code ---
@@ -14,7 +16,7 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 1
-line_highlights: 10-14
+line_highlights: 10-12
 ---
 <html lang="en">
   <head>

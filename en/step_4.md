@@ -18,6 +18,8 @@ Stay in `style.css` and update the drawer rules. Padding, borders, shadows, and 
 
 </div>
 
+These rules restyle each part of the widget: the closed drawer, the open state, the clickable summary, the inside panel, and the giant hidden message text.
+
 <div class="c-project-code">
 
 --- code ---

@@ -6,6 +6,8 @@ Add the drawer underneath the header so the page has something dramatic to open.
 
 Add a `<details class="drawer">` element with a clickable `<summary>` and a hidden `<section class="inside">`.
 
+`<details>` makes a built-in open-and-close widget with no JavaScript. The `<summary>` is the part people click, and everything else inside stays hidden until it opens.
+
 <div class="c-project-code">
 
 --- code ---
@@ -13,8 +15,8 @@ Add a `<details class="drawer">` element with a clickable `<summary>` and a hidd
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 11
-line_highlights: 16-21
+line_number_start: 9
+line_highlights: 14-19
 ---
     <main class="page">
       <p class="eyebrow">Recovered profile artefact // last updated 2:13am</p>
