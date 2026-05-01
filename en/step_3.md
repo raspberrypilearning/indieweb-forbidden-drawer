@@ -14,7 +14,13 @@ Open `style.css` and edit the values inside `:root`. These custom properties con
 
 <p>Small value changes can make the whole page feel more sugary, more dramatic, or more suspicious.</p>
 
-<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker</a> if you want help choosing colours!</p>
+<p>`--drawer-bg` could be slime green, sticker pink, or sickly orange.</p>
+
+<p>`--drawer-open-bg` could be warning yellow, bright peach, or fake highlighter green.</p>
+
+<p>`--inside-bg` works well as dirty white, pale peach, or washed-out cyan.</p>
+
+<p><a href="https://www.google.com/search?q=web+colour+picker" target="_blank" rel="noopener noreferrer">Open the Google web colour picker in a new tab</a> if you want help choosing colours.</p>
 
 </div>
 
