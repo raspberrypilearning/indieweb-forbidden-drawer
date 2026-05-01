@@ -1,10 +1,10 @@
 <h2 class="c-project-heading--task">Make it look badly famous</h2>
 
-Make the clickable artefact chunkier and more dramatic so opening it feels a bit chaotic.
+Make the outside of the artefact chunkier and more dramatic so opening it feels a bit chaotic.
 
 <h2 class="c-project-heading--explainer">Make this change</h2>
 
-Stay in `style.css` and update the drawer rules. Padding, borders, shadows, and text styling can make the closed widget feel heavy and the revealed message feel like a very bad internet discovery.
+Stay in `style.css` and update the outside drawer rules. Padding, borders, shadows, and text styling can make the closed widget feel heavy before you even open it.
 
 <div class="c-project-tip">
 
@@ -14,11 +14,9 @@ Stay in `style.css` and update the drawer rules. Padding, borders, shadows, and 
 
 <p>`border`, `box-shadow`, and `background` make it look stickered, loud, and messy on purpose.</p>
 
-<p>You can also style `.inside p` so the hidden message looks huge, ugly, and impossible to ignore.</p>
-
 </div>
 
-These rules restyle each part of the widget: the closed drawer, the open state, the clickable summary, the inside panel, and the giant hidden message text.
+These rules restyle the outside of the widget: the closed drawer, the open state, and the clickable summary.
 
 ### Step 1
 
@@ -111,82 +109,10 @@ summary {
 
 Run your code and observe that the summary text on the closed drawer looks louder and more important.
 
-### Step 4
-
-Replace the `.inside` rule with this version.
-
-This rule styles the inside panel that appears after opening. It adds the striped background, thicker border, and more space around the hidden message.
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 111
-line_highlights: 111-127
----
-.inside {
-  margin-top: 16px;
-  padding: 14px 16px;
-  border: 4px dashed var(--ink);
-  border-radius: calc(var(--corner-size) - 4px);
-  background:
-    repeating-linear-gradient(
-      -45deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4) 8px,
-      transparent 8px,
-      transparent 16px
-    ),
-    var(--inside-bg);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55);
-  line-height: 1.7;
-}
---- /code ---
-
-</div>
-
-Run your code and observe that the inside area now feels more like a messy warning panel than a plain box.
-
-### Step 5
-
-Replace the `.inside p` rule with this final version.
-
-This rule only styles the hidden paragraph itself. It turns `6-7` into huge ugly text that is impossible to miss.
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 129
-line_highlights: 129-139
----
-.inside p {
-  margin: 0;
-  font-family: "Comic Sans MS", Impact, fantasy;
-  font-size: clamp(4rem, 18vw, 7rem);
-  font-weight: 900;
-  line-height: 0.82;
-  letter-spacing: 0.08em;
-  text-align: center;
-  text-shadow: 4px 4px 0 var(--drawer-open-bg);
-  transform: rotate(-2deg);
-}
---- /code ---
-
-</div>
-
-Run your code and observe that the hidden message now looks huge, warped, and deeply embarrassing.
-
 ## Now run your code
 
-The widget should now feel chunkier, louder, and more chaotic when you open it, and the hidden message should look huge and ugly.
+The closed drawer and the warning label should now feel much louder, while the inside panel still looks fairly plain for now.
 
 <div class="c-project-output">
-  <img src="images/step_4_output.png" alt="Expected project output after step 4 showing the final cursed-profile artefact with a giant ugly hidden message.">
+  <img src="images/step_4_output.png" alt="Expected project output after step 4 showing the louder drawer styling before the inside panel gets its final ugly makeover.">
 </div>

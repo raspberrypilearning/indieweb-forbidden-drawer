@@ -5,7 +5,8 @@
     1,
     2,
     3,
-    4
+    4,
+    5
   ],
   "renderer": "swift-webkit",
   "skipped_steps": [],
@@ -13,22 +14,27 @@
     "1": {
       "output": "images/step_1_output.png",
       "status": "generated",
-      "target": "file:///Users/mark.calleja/Documents/VSCode/indieweb-forbidden-drawer/render_targets/step_1.html"
+      "target": "temporary local render source for step 1"
     },
     "2": {
       "output": "images/step_2_output.png",
       "status": "generated",
-      "target": "file:///Users/mark.calleja/Documents/VSCode/indieweb-forbidden-drawer/render_targets/step_2.html"
+      "target": "temporary local render source for step 2"
     },
     "3": {
       "output": "images/step_3_output.png",
       "status": "generated",
-      "target": "file:///Users/mark.calleja/Documents/VSCode/indieweb-forbidden-drawer/render_targets/step_3.html"
+      "target": "temporary local render source for step 3"
     },
     "4": {
       "output": "images/step_4_output.png",
       "status": "generated",
-      "target": "file:///Users/mark.calleja/Documents/VSCode/indieweb-forbidden-drawer/render_targets/step_4.html"
+      "target": "temporary local render source for step 4"
+    },
+    "5": {
+      "output": "images/step_5_output.png",
+      "status": "generated",
+      "target": "temporary local render source for step 5"
     }
   },
   "toolchain_available": true
