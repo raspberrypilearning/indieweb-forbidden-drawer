@@ -9,10 +9,9 @@ steps:
   - title: 'Build the warning tab'
     completion:
       - 'engaged'
-  - title: 'Give it terminally bad taste'
+  - title: 'Add the hidden panel'
     completion:
       - 'internal'
-  - title: 'Add the hidden panel'
   - title: 'Add the cursed message'
     completion:
       - 'external'

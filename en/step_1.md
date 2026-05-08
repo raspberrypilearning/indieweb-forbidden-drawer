@@ -1,8 +1,14 @@
 <h2 class="c-project-heading--task">Add the cursed file header</h2>
 
-Add the eyebrow, the page's main heading, and the status line inside your page's empty `<main>` element. These can say anything you like!
+Add the visible header inside the page so the fake file stops looking empty.
 
-These tags build the visible header for the fake file. The class names give `style.css` separate hooks for the eyebrow line and the mood label later.
+<h2 class="c-project-heading--explainer">Make this change</h2>
+
+## Step 1
+Run the page first to see what you've got now.
+
+## Step 2
+The starter file has an empty `<main>` element, so add the small top label, the main heading, and the mood line inside it.
 
 <div class="c-project-code">
 
@@ -23,13 +29,27 @@ line_highlights: 10-12
   </head>
   <body>
     <main class="page">
-      <p class="eyebrow">Recovered profile artefact // last updated 2:13am</p>
+      <p class="eyebrow">THIS PAGE FAILED THE VIBE CHECK<br>// OPEN AT YOUR OWN RISK</p>
       <h1>DO NOT OPEN_final_FINAL2.html</h1>
       <p class="status">mood: banned from the computer room</p>
     </main>
   </body>
 </html>
 --- /code ---
+
+</div>
+
+<div class="c-project-tip">
+
+<h3>Tip</h3>
+
+<p>`Eyebrow` is another name for a small label above a main heading.</p>
+<p>It is often used like a label or category tag by developers. You might also see:</p>
+<ul>
+  <li><code>overline</code></li>
+  <li><code>kicker</code></li>
+  <li><code>label</code></li>
+</ul>
 
 </div>
 
