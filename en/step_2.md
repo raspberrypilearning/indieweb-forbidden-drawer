@@ -19,10 +19,10 @@ line_highlights: 14-16
     <main class="page">
       <p class="eyebrow">THIS PAGE FAILED THE VIBE CHECK<br>// OPEN AT YOUR OWN RISK</p>
       <h1>DO NOT OPEN_final_FINAL2.html</h1>
-      <p class="status">mood: banned from the computer room</p>
+      <p class="status">Mood: Banned from the computer room</p>
 
       <details class="drawer">
-        <summary>open this if you want to get cooked</summary>
+        <summary>Open this if you want to get cooked</summary>
       </details>
     </main>
 --- /code ---

@@ -31,7 +31,7 @@ line_highlights: 10-12
     <main class="page">
       <p class="eyebrow">THIS PAGE FAILED THE VIBE CHECK<br>// OPEN AT YOUR OWN RISK</p>
       <h1>DO NOT OPEN_final_FINAL2.html</h1>
-      <p class="status">mood: banned from the computer room</p>
+      <p class="status">Mood: banned from the computer room</p>
     </main>
   </body>
 </html>

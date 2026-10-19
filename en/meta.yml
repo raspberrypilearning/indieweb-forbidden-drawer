@@ -2,7 +2,7 @@ hero_image: images/banner.png
 description: Make a cursed profile artefact that opens with HTML and reveals a weird hidden message
 listed: false
 pdf: false
-title: 'Indieweb Cursed Profile Artefact'
+title: 'Indieweb cursed profile artefact'
 landing: true
 steps:
   - title: 'Add the cursed file header'
